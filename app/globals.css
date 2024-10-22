@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ==== clerk class override ===== */
+
+.cl-formButtonPrimary {
+  color: white;
+  background-color: #5433ff;
+}
+
+.cl-formButtonPrimary:hover,
+.cl-formButtonPrimary:focus,
+.cl-formButtonPrimary:active {
+  background-color: #7157f4;
+}
+
+.cl-socialButtonsBlockButtonText {
+  color: white;
+}
+
+.cl-logoBox {
+  height: 40px;
+}
+.cl-dividerLine {
+  background: #5433ff;
+  height: 2px;
+}
+
+.cl-socialButtonsIconButton {
+  border: 3px solid #5433ff;
+}
+
+.cl-internal-wkkub3 {
+  color: white;
+}
+.cl-userButtonPopoverActionButton {
+  color: white;
+}
+
+/* =====Stream class override=========== */
+
+.str-video {
+  --str-video__primary-color: #5433ff;
+}
+
+.str-video__participant-list {
+  background-color: #5433ff;
+  padding: 9px;
+  border-radius: 10%;
+}
+
+/* =====React-DatePicker class override=========== */
+
+@layer base {
+  :root {
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: #2c3e50;
+    --background: 223 96.45% 98.48%;
+    --foreground: 223 2.9% 0.96%;
+
+    --muted: 223 2.9% 92.4%;
+    --muted-foreground: 223 1.45% 42.4%;
+
+    --popover: 223 66.8% 92.4%;
+    --popover-foreground: 223 2.9% 1.2%;
+
+    --card: 223 66.8% 92.4%;
+    --card-foreground: 223 2.9% 1.2%;
+
+    --border: 223 7.9% 89.96%;
+    --input: 223 7.9% 89.96%;
+
+    --primary: 223 29% 24%;
+    --primary-foreground: 223 0.58% 92.4%;
+
+    --secondary: 223 1.45% 96.2%;
+    --secondary-foreground: 223 2.7399999999999998% 12.4%;
+
+    --accent: 223 1.45% 96.2%;
+    --accent-foreground: 223 2.7399999999999998% 12.4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 223 29% 24%;
+
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: #5433ff;
+
+    --background: 265 65% 4.8%;
+    --foreground: 265 10% 98%;
+
+    --muted: 265 50% 18%;
+    --muted-foreground: 265 10% 56%;
+
+    --popover: 265 45% 7.8%;
+    --popover-foreground: 265 10% 98%;
+
+    --card: 265 45% 7.8%;
+    --card-foreground: 265 10% 98%;
+
+    --border: 265 50% 18%;
+    --input: 265 50% 18%;
+
+    --primary: 265 100% 60%;
+    --primary-foreground: 265 10% 6%;
+
+    --secondary: 265 50% 18%;
+    --secondary-foreground: 265 10% 98%;
+
+    --accent: 265 50% 18%;
+    --accent-foreground: 265 10% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 265 10% 98%;
+
+    --ring: 265 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
