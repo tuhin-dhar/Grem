@@ -58,9 +58,7 @@ const MobileNav = () => {
                           width={24}
                           height={24}
                         />
-                        <p className="text-lg font-semibold max-lg:hidden">
-                          {link.label}
-                        </p>
+                        <p className="text-lg font-semibold ">{link.label}</p>
                       </Link>
                     </SheetClose>
                   );

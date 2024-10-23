@@ -1,7 +1,6 @@
 import React from "react";
 import { Dialog, DialogContent } from "./ui/dialog";
 
-import { title } from "process";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
