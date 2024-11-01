@@ -49,6 +49,6 @@ Access **Grem** at [grem.vercel.app](https://grem.vercel.app)
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/grem.git
+git clone https://github.com/tuhin-dhar/grem.git
 cd grem
 npm install
